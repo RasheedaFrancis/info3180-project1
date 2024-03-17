@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>Properties</h1>
+   
+        {% for property in properties %}
+                <img src="{{ url_for('get_images',filename=property.photo) }}" alt="Property Photo" style="width: 320px;">
+                <p>Title: {{ property.title }}</p>
+                <p>Location: {{ property.location }}</p>
+                <p>Price: ${{ property.price  }}</p>
+                <button><a href="{{ url_for('get_property', propertyid=property.id) }}">View Property</a></button>
+                <br>
+                <br>
+
+        {% endfor %}
+
+{% endblock %}

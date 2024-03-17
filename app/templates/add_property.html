@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h1>Add New Property</h1>
+    
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <p>{{ form.title.label }}<br>{{ form.title }} </p>
+        <p>{{ form.description.label }}<br>{{ form.description }}</p>
+        <p>{{ form.bedrooms.label }}<br>{{ form.bedrooms (placeholder ='3')}}</p>
+        <p>{{ form.bathrooms.label }}<br>{{ form.bathrooms (placeholder ='2')}}</p>
+        <p>{{ form.price.label }}<br>{{ form.price  (placeholder ='15,000,000') }}</p>
+        <p>{{ form.property_type.label }}<br>{{form.property_type (placeholder ='House') }}</p>
+        <p>{{ form.location.label }}<br>{{ form.location (placeholder ='100 Waterloo Rd')}}</p>
+        <p>{{ form.photo.label }}<br>{{ form.photo }}</p>
+        <button type="submit">Add Property</button>
+    </form>
+{% endblock %}
