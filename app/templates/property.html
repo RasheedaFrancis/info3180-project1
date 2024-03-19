@@ -6,7 +6,7 @@
 {% include 'flash_messages.html' %}
 <div class="Property_info">
    
-    <img src="{{ url_for('get_images',filename=property.photo) }}" alt="Property Photo" >
+    <img src="{{ url_for('get_images',filename=property.photo) }}" alt="Property Photo" style="width:320px;">
     <div class="Property_details">
     <div class="Property_details">
         <p class="Title">{{ property.title }}</p>
