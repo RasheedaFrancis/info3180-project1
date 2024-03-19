@@ -1,3 +1,236 @@
 body {
     padding-top: 5rem;
+    background-color: lightgray;
+}
+
+.fullspace{
+    width:500px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color:white;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+   
+    font-weight: bolder;
+
+}
+
+
+.group1 {
+    display: flex;
+    gap:50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.group2 {
+    display: flex;
+    gap:50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.input-field{
+    width: 225px;
+}
+
+.input{
+    font-weight: bold;
+}
+.Add_P{
+    background-color:rgb(47, 147, 228);
+    color: white;
+    border-radius: 5px;
+    border:none;
+    height:30px;
+}
+
+
+
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0%;
+    
+    
+}
+
+.item {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    border: 0px solid #ccc; 
+    box-sizing: border-box; 
+    background-color: #fff; 
+    height: auto;
+   
+   
+}
+
+.item img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+}
+
+.item img {
+    width: 100%; 
+    height: 200px;
+    
+}
+
+
+.details  {
+    margin-top:10px; 
+    
+    
+    
+
+}
+.details p{
+    padding-left: 15px;
+    height: 10px;
+    height: auto;
+    margin-bottom: 0%;
+   
+  }
+.details button{
+    width: 100%;
+    border: none;
+    background-color: rgb(15, 172, 159);
+    height:50px;
+    font-weight: bold;
+    
+    
+}
+
+.details button a{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.details .Price {
+    background-color:rgb(47, 147, 228);
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50px; 
+    color: white;
+    height: 30px;
+    padding-left:10px;
+    padding-right: 10px;
+    
+    
+    
+}
+
+.Location img{
+        display: inline-block;
+        width: 20px; 
+        height: auto;      
+    
+}
+
+
+
+.Title{
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+   
+}
+
+.details .Location{
+    color:grey;
+    position: relative;
+
+    
+}
+
+.Property_info{
+ display: flex;
+ background-color: white;
+ font-family: 'Arial';
+ width:700px;
+ 
+    
+}
+.Property_details{
+margin: 20px;
+
+
+}
+
+.Price_Type{
+display: flex;
+gap:20px
+
+
+}
+
+.rooms{
+    display: flex;
+    gap:20px
+    
+    
+    }
+
+.P_type{
+    
+    background-color:rgb(228, 155, 20);
+    color:white;
+    border-radius: 50px; 
+    padding-left:10px;
+    padding-right: 10px;
+    
+}
+
+.P_price{
+    background-color: rgb(47, 147, 228);
+    color:white;
+    border-radius: 50px; 
+    padding-left:10px;
+    padding-right: 10px;
+    
+}
+
+.Property_info button{
+
+    color: white;
+    border-radius: 5px;
+    border:none;
+    height:30px;
+    background-color: rgb(15, 172, 159);
+}
+
+.P_bedrooms img{
+    
+    display: inline-block;
+    width: 20px; 
+    height: auto; 
+
+}
+
+.P_bathrooms img{
+    display: inline-block;
+    width: 20px; 
+    height: auto; 
+
 }

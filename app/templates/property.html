@@ -3,16 +3,28 @@
 {% extends "base.html" %}
 {% block main %}
 
-
-<img src="{{ url_for('get_images',filename=property.photo) }}" alt="Property Photo" style="width: 320px;">
-<p>Title: {{ property.title }}</p>
-<p>Description: {{ property.description }}</p>
-<p>No. of Bedrooms: {{ property.bedrooms }}</p>
-<p>No. of Bathrooms: {{ property.bathrooms }}</p>
-<p>Location: {{ property.location }}</p>
-<p>Price: ${{ property.price}}</p>
-<p>Property Type: {{property.property_type}}</p>
-<button>Email Realtor</button>
-
+{% include 'flash_messages.html' %}
+<div class="Property_info">
+   
+    <img src="{{ url_for('get_images',filename=property.photo) }}" alt="Property Photo" >
+    <div class="Property_details">
+    <div class="Property_details">
+        <p class="Title">{{ property.title }}</p>
+        <div class="Price_Type">
+        <p class="P_price">{{ property.price}}</p>
+        <p class="P_type"> {{property.property_type}}</p>
+        </div>
+        <p class="P_description">{{ property.description }}</p>
+        <div class="rooms">
+            <p class="P_bedrooms"><img src="{{ url_for('static', filename='bedroom.jpg') }}" alt="Location Image" > {{ property.bedrooms }} Bedrooms</p>
+            <p class="P_bathrooms"><img src="{{ url_for('static', filename='bathroom.jpg') }}" alt="Location Image" >{{ property.bathrooms }} Bathrooms</p>
+        </div>
+        <p class="Location"><img src="{{ url_for('static', filename='location.jpg') }}" alt="Location Image" >
+        {{ property.location }}
+        <br>
+        <br>
+        <button>Email Realtor</button>
+    </div>
+   
+</div>
 {% endblock %}
-property
