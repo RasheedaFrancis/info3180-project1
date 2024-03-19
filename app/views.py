@@ -14,6 +14,7 @@ from app.forms import PropertyForm
 
 
 
+
 ###
 # Routing for your application.
 ###
@@ -106,5 +107,6 @@ def add_header(response):
 def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
+
 
 
